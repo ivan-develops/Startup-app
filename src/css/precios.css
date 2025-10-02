@@ -1,0 +1,73 @@
+.precios {
+    margin-bottom: 100px;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        justify-items: center;
+        gap: 20px;
+
+        .plan {
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            display: grid;
+            gap: 20px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+
+            .nombre {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .precio {
+                font-weight: 800;
+                font-size: 25px;
+
+                span {
+                    font-weight: normal;
+                    color: #727272;
+                    font-size: 14px;
+                }
+            }
+            .descripcion {
+                line-height: 150%;
+            }
+            .lista {
+                list-style-type: none;
+
+                li {
+                    display: flex;
+                    gap: 10px;
+                    line-height: 180%;
+
+                    .icono {
+                        color: var(--azul-primario);
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            .boton {
+                justify-content: center;
+            }
+            
+            &:hover {
+                border: 1px solid var(--azul-primario);
+            }
+
+            &.destacado {
+                background: var(--azul-secundario);
+                color: #fff;
+
+                .precio span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1000px){
+       margin-bottom: 40px; 
+    }
+
+}

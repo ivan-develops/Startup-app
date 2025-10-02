@@ -1,0 +1,189 @@
+.hero {
+    background: linear-gradient(90deg, hsla(219, 74%, 45%, 1) 0%, hsla(342, 100%, 48%, 1) 100%);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    border-radius: 20px;
+    gap: 20px;
+    color: #fff;
+    position: relative;
+    padding: 50px;
+
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .titulo {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 600;
+            text-align: left;
+        }
+        .descripcion {
+            line-height: 160%;
+            font-size: 18px ;
+        }
+        .botones {
+            display: flex;
+            gap: 15px;
+    
+            .transparente {
+                background: rgba(0, 0, 0, 0.2);
+                &:hover {
+                    background: rgba(0, 0, 0, 0.4);
+                }
+            }
+            .secundario {
+                background: var(--azul-secundario);
+                border: 1px solid rgba(250, 250, 250, 0.2);
+                &:hover {
+                    border: 1px solid rgba(250, 250, 250, 1);       
+                }
+            }
+        }
+        .estadisticas {
+            display: flex;
+            gap: 40px;
+    
+            p {
+                display: flex;
+                gap: 10px;
+                font-size: 20px;
+                font-weight: 500;
+    
+                &:nth-child(1){
+                    padding-right: 40px;
+                    border-right: 1px solid #fff;
+                }
+                .icono {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+    
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .col-2 {
+        position: relative;   /** para sacar de contenedor col-2*/
+
+        .slideshow {            
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;  /** para sacar de contenedor col-2*/
+            top: -20px;    /** mejora posición arriba */
+
+            .slides {
+                display: flex;
+                flex-wrap: nowrap;
+                
+                .slide {
+                    min-width: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .indicadores {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                bottom: 20px;
+                
+                .indicador {
+                    width: 25px;
+                    height: 4px;
+                    background: rgba(250, 250, 250, 0.5);
+                    border: none;
+                    transition: all 0.3s ease;
+
+                    &.active {                      
+                        background: rgba(250, 250, 250, 1);
+                    }
+                    &:hover {
+                        background: rgba(250, 250, 250, 7);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .overlay-video {
+        display: none;   /** por defecto OCULTO, pasa a FLEX con js activa clase ACTIVE */
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        &.active {
+            display: flex;
+        }
+
+        .video {
+            width: 90%;
+            max-width: 900px;
+            background: #fff;
+
+            iframe {
+                width: 100%;
+                vertical-align: top;   /** corrige un margen por defecto de IMG y IFRAME */
+                aspect-ratio: 16 / 9;
+                background: #000;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        & {
+            border-radius: 0;
+            grid-template-columns: 1fr;
+            
+
+            .col-1 {
+                order: 2;
+                gap: 20px;
+
+                .titulo {
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+                .descripcion {
+                    text-align: center;
+                }
+
+                .botones,
+                .estadisticas {
+                    justify-content: center;
+                }
+            }
+            .col-2 {
+                order: 1;
+                display: flex;
+                justify-content: center;
+
+                .slideshow {
+                    position: relative;
+                    width: 60%;
+                }
+            }
+            
+        }
+    }
+}
