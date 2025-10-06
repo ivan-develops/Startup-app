@@ -75,13 +75,14 @@
         .slideshow {            
             width: 100%;
             border-radius: 10px;
-            /* overflow: hidden; */
+            overflow: hidden;
             position: absolute;  /** para sacar de contenedor col-2*/
             top: -20px;    /** mejora posición arriba */
 
             .slides {
                 display: flex;
                 flex-wrap: nowrap;
+                /* transition: all 0.5s ease-in-out; */
                 
                 .slide {
                     min-width: 100%;

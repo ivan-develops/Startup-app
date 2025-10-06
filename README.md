@@ -4,9 +4,9 @@
 
 ## 📌 Descripción
 
-Pequeña descripción clara y sencilla de lo que hace el proyecto.
+Landing page de una aplicación clara y sencilla con funcionalidades en el slideshow, un carrusel automático que muestra imagenes de la app en el tiempo.
 
-Ejemplo: *"Aplicación de lista de tareas desarrollada en HTML, CSS y JavaScript. Permite crear, editar y eliminar tareas, almacenándolas en el navegador con LocalStorage."*
+La web esta dividida de manera modular usando **Vite**, permitiendo buena organización y optimización en el producto final.
 
 ---
 
@@ -15,6 +15,7 @@ Ejemplo: *"Aplicación de lista de tareas desarrollada en HTML, CSS y JavaScript
 - **HTML5**
 - **CSS3 (Flexbox / Grid / Animaciones)**
 - **JavaScript (ES6+)**
+- **Vite**
 
 ---
 
