@@ -15,16 +15,13 @@ Ejemplo: *"Aplicación de lista de tareas desarrollada en HTML, CSS y JavaScript
 - **HTML5**
 - **CSS3 (Flexbox / Grid / Animaciones)**
 - **JavaScript (ES6+)**
-- [API Pública utilizada] *(si aplica)*
 
 ---
 
 ## 🎯 Características
 
 - ✅ Interfaz responsive
-- ✅ Funcionalidad CRUD (crear, leer, actualizar, eliminar)
-- ✅ Guardado de datos en LocalStorage
-- ✅ Modo oscuro (opcional)
+- ✅ Funcionalidad carrusel, transiciones de imagenes en slideshow
 
 ---
 

@@ -75,7 +75,7 @@
         .slideshow {            
             width: 100%;
             border-radius: 10px;
-            overflow: hidden;
+            /* overflow: hidden; */
             position: absolute;  /** para sacar de contenedor col-2*/
             top: -20px;    /** mejora posición arriba */
 
