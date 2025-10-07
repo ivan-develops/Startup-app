@@ -25,8 +25,8 @@ const cambiarSlide = () => {
     else {
         slideActual = 1;
     }
+    
     indicadores.querySelector('.active').classList.remove('active');
-
     indicadores.children[slideActual -1].classList.add('active');
     
 
