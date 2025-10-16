@@ -113,9 +113,9 @@
                     &.active {                      
                         background: rgba(250, 250, 250, 1);
                     }
-                    &:hover {
+                    /*&:hover {
                         background: rgba(250, 250, 250, 7);
-                    }
+                    }*/
                 }
             }
 
