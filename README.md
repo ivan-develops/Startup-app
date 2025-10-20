@@ -1,6 +1,6 @@
 # 🚀 Startup App
 
-![Portada o Logo del Proyecto](https://via.placeholder.com/900x200.png?text=Banner+del+Proyecto)
+![Portada o Logo del Proyecto](public/assets/img/logo.svg)
 
 ## 📌 Descripción
 
@@ -22,18 +22,16 @@ La web esta dividida de manera modular usando **Vite**, permitiendo buena organi
 ## 🎯 Características
 
 - ✅ Interfaz responsive
-- ✅ Funcionalidad carrusel, transiciones de imagenes en slideshow
+- ✅ Funcionalidad carrusel, funcionalidad de tabs, transiciones de imagenes en slideshow.
 
 ---
 
 ## 📸 Capturas de pantalla
 
-![Captura de Pantalla 1](https://via.placeholder.com/600x400.png?text=Captura+1)
-
-![Captura de Pantalla 2](https://via.placeholder.com/600x400.png?text=Captura+2)
+![Captura de Pantalla 1](screenshot_1.jpg)
 
 ---
 
 ## 🚀 Demo en vivo
 
-👉 [Ver proyecto en GitHub Pages](https://tuusuario.github.io/nombre-del-proyecto/)
+👉 [Ver proyecto en GitHub Pages](https://ivan-develops.github.io/Startup-app/)
