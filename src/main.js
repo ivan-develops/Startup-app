@@ -8,4 +8,4 @@ import './css/precios.css';
 import './css/footer.css';
 import './js/video.js';
 import './js/slideshow.js';
-import './js/caracteristicas.js'
+import './js/caracteristicas.js';
